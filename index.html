@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chamuditha Jayasanka — Software Engineer &amp; Web Developer</title>
+    <meta name="description" content="Portfolio of Chamuditha Jayasanka, a software engineering undergraduate and web developer specialising in Java, JavaScript, PHP, SQL and modern web technologies.">
+    <meta name="author" content="Chamuditha Jayasanka">
+    <meta name="theme-color" content="#081538" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#e6f4ec" media="(prefers-color-scheme: light)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamuditha Jayasanka — Software Engineer &amp; Web Developer">
+    <meta property="og:description" content="Software engineering undergraduate building responsive web apps and desktop software with Java, JavaScript, PHP and MySQL.">
+    <meta property="og:image" content="profile.jpeg">
+    <meta property="og:image:alt" content="Portrait of Chamuditha Jayasanka">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23081538'/%3E%3Ctext x='50%25' y='57%25' font-family='monospace' font-size='34' font-weight='700' fill='%23a8f5c0' text-anchor='middle'%3Ecj%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            document.documentElement.classList.add("js");
+            try {
+                var saved = localStorage.getItem("theme");
+                var prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+                document.documentElement.dataset.theme = saved || (prefersLight ? "light" : "dark");
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav>
+            <a class="logo" href="#home" aria-label="Chamuditha Jayasanka — home">chamuditha<span class="logo-dot">.</span>dev</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="primaryNav">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#stack" class="nav-link">Stack</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#demo" class="nav-link">Live Demo</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-actions">
+                    <a class="btn btn-ghost btn-sm" href="Chamuditha-Jayasanka-CV.pdf" download>
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                        Résumé
+                    </a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" aria-pressed="false">
+                        <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>
+                        <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section id="home" class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="hero-tag"><span class="dot"></span>Continue for Internship</span>
+                    <h1>Chamuditha<br><span class="grad-text">Jayasanka</span></h1>
+                    <p class="hero-role"><span class="prompt">&gt;</span> BSc (Hons) Computer Science (Software Engineering) student at the University of Wolverhampton, via CINEC Campus, Malabe<span class="cursor"></span></p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Get in touch</a>
+                    </div>
+
+                    <dl class="hero-stats">
+                        <div><dt>Projects</dt><dd>04</dd></div>
+                        <div><dt>Degree</dt><dd>BSc Hons CS</dd></div>
+                        <div><dt>Status</dt><dd>Open to work</dd></div>
+                    </dl>
+                </div>
+
+                <div class="hero-photo">
+                    <div class="photo-ring">
+                        <div class="photo-inner">
+                            <img src="profile.jpeg" alt="Portrait of Chamuditha Jayasanka" width="320" height="320">
+                        </div>
+                    </div>
+                    <span class="float-chip chip-1">Java</span>
+                    <span class="float-chip chip-2">MySQL</span>
+                    <span class="float-chip chip-3">JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ STACK MARQUEE ============ -->
+        <section class="marquee-band" aria-label="Technologies I work with">
+            <div class="marquee" data-marquee>
+                <div class="marquee-track">
+                    <span>Java</span><span>JavaScript</span><span>PHP</span><span>HTML5</span><span>CSS3</span>
+                    <span>MySQL</span><span>OOP</span><span>Git</span><span>GitHub</span><span>React</span>
+                    <span>Database Design</span><span>Cloud Fundamentals</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT (BENTO) ============ -->
+        <section id="about" class="section about">
+            <span class="section-eyebrow reveal">// about</span>
+            <h2 class="reveal">About Me</h2>
+
+            <div class="bento-grid">
+
+                <article class="bento bento-wide reveal">
+                    <div class="bento-head">
+                        <span class="bento-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+                        </span>
+                        <h3>Who I am</h3>
+                    </div>
+                    <p>
+                        I'm <strong>Chamuditha Jayasanka</strong>, an aspiring Software Engineer pursuing a
+                        BSc (Hons) in Computer Science (Software Engineering) at the University of
+                        Wolverhampton through CINEC Campus. I'm passionate about software development,
+                        web technologies, artificial intelligence, and building digital solutions that
+                        solve real-world problems. I have experience and interest in technologies such
+                        as Java, Python, JavaScript, PHP, HTML, CSS, SQL, MySQL, MongoDB, Firebase, AWS,
+                        and RESTful web services.
+                    </p>
+                    <p>
+                        My strength is combining programming with creativity, particularly in UI/UX
+                        design, user experience, AI-assisted development, prompt engineering, and using
+                        modern AI tools to improve coding efficiency and design quality. I enjoy learning
+                        new technologies, developing practical projects, working both independently and
+                        as part of a team, and continuously improving my technical and professional
+                        skills as I work toward becoming a successful Software Engineer.
+                    </p>
+                </article>
+
+                <article class="bento reveal">
+                    <div class="bento-head">
+                        <span class="bento-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18 22 12 16 6M8 6 2 12l6 6"/></svg>
+                        </span>
+                        <h3>Technical focus</h3>
+                    </div>
+                    <ul class="pill-list">
+                        <li>Software Development</li><li>Web Development</li>
+                        <li>Database Management</li><li>Programming</li>
+                        <li>Problem Solving</li><li>Software Testing</li>
+                        <li>Emerging Technologies</li>
+                    </ul>
+                </article>
+
+                <article class="bento bento-terminal reveal">
+                    <div class="terminal-bar">
+                        <span class="tbtn red"></span>
+                        <span class="tbtn yellow"></span>
+                        <span class="tbtn green"></span>
+                        <span class="terminal-title">skills.json</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="ln">01</span><span class="key">"Programming"</span><span class="val">["Java", "JavaScript", "PHP"]</span></li>
+                        <li><span class="ln">02</span><span class="key">"Web Dev"</span><span class="val">["HTML", "CSS", "JavaScript"]</span></li>
+                        <li><span class="ln">03</span><span class="key">"Database"</span><span class="val">["SQL", "MySQL", "Design"]</span></li>
+                        <li><span class="ln">04</span><span class="key">"Engineering"</span><span class="val">["OOP", "System Analysis"]</span></li>
+                        <li><span class="ln">05</span><span class="key">"Cloud"</span><span class="val">["Fundamentals"]</span></li>
+                        <li><span class="ln">06</span><span class="key">"AI"</span><span class="val">["Prompt Engineering"]</span></li>
+                    </ul>
+                </article>
+
+                <article class="bento bento-wide reveal">
+                    <div class="bento-head">
+                        <span class="bento-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5m0 14h16M8 15l3.5-4.5L15 14l3-5"/></svg>
+                        </span>
+                        <h3>Academic projects</h3>
+                    </div>
+                    <p>
+                        Throughout my degree I've built a <strong>Cinema Ticket Booking System</strong>
+                        in Java (JFrame + MySQL) with seat selection, movie management and booking
+                        confirmation, contributed to <strong>Campus Hub</strong>, a PHP/MySQL student
+                        platform developed in a team, and created a <strong>Bank Simulation System</strong>
+                        applying OOP and database management to model real banking operations.
+                    </p>
+                </article>
+
+                <article class="bento bento-accent reveal">
+                    <span class="bento-label">// career objective</span>
+                    <p class="objective">
+                        To become a skilled Software Engineer who develops innovative, secure and
+                        user-friendly software — contributing to meaningful projects while growing
+                        into a leadership role in the IT industry.
+                    </p>
+                </article>
+
+                <article class="bento reveal">
+                    <span class="bento-label">// personal strengths</span>
+                    <ul class="strengths-list">
+                        <li>Analytical &amp; problem-solving</li>
+                        <li>Quick learner, keen on new tech</li>
+                        <li>Teamwork &amp; collaboration</li>
+                        <li>Strong English communication</li>
+                        <li>Creative thinking &amp; detail</li>
+                        <li>Reliable under deadlines</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ STACK ============ -->
+        <section id="stack" class="section stack">
+            <span class="section-eyebrow reveal">// stack</span>
+            <h2 class="reveal">Technologies &amp; Tools</h2>
+
+            <div class="stack-grid">
+                <article class="stack-card reveal">
+                    <h3>Languages</h3>
+                    <ul class="pill-list">
+                        <li>Java</li><li>JavaScript</li><li>PHP</li><li>HTML5</li><li>CSS3</li><li>SQL</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3>Databases</h3>
+                    <ul class="pill-list">
+                        <li>MySQL</li><li>Relational Design</li><li>Normalisation</li><li>ER Modelling</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3>Engineering</h3>
+                    <ul class="pill-list">
+                        <li>OOP</li><li>System Analysis</li><li>SDLC</li><li>Cloud Fundamentals</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3>Tools &amp; Platforms</h3>
+                    <ul class="pill-list">
+                        <li>Git</li><li>GitHub</li><li>VS Code</li><li>MySQL Workbench</li><li>Microsoft Suite</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3>Design &amp; AI</h3>
+                    <ul class="pill-list">
+                        <li>UI / UX Design</li><li>Prompt Engineering</li><li>AI-assisted Dev</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3>Currently learning</h3>
+                    <ul class="pill-list">
+                        <li>React</li><li>APIs</li><li>Git Workflows</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section projects">
+            <span class="section-eyebrow reveal">// projects</span>
+            <h2 class="reveal">Selected Work</h2>
+
+            <div class="project-container">
+
+                <a class="card reveal" href="https://github.com/ChamudithaJayasanka/NewWeatherApp" target="_blank" rel="noopener noreferrer">
+                    <span class="card-index">01</span>
+                    <h3>Weather App</h3>
+                    <p>A responsive weather application that consumes the OpenWeather API and renders live forecasts with a clean, mobile-friendly interface.</p>
+                    <ul class="tag-row">
+                        <li>React</li><li>JavaScript</li><li>REST API</li>
+                    </ul>
+                    <span class="card-link">View on GitHub
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                    </span>
+                </a>
+
+                <a class="card reveal" href="https://github.com/ChamudithaJayasanka/Web-Development-Project" target="_blank" rel="noopener noreferrer">
+                    <span class="card-index">02</span>
+                    <h3>eCommerce Website</h3>
+                    <p>A full storefront experience built from scratch with HTML, CSS and vanilla JavaScript — product browsing, cart and checkout flows.</p>
+                    <ul class="tag-row">
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+                    </ul>
+                    <span class="card-link">View on GitHub
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                    </span>
+                </a>
+
+                <article class="card card-static reveal">
+                    <span class="card-index">03</span>
+                    <h3>Cinema Ticket Booking</h3>
+                    <p>Desktop application in Java (JFrame + MySQL) covering movie management, interactive seat selection, booking confirmation and database integration.</p>
+                    <ul class="tag-row">
+                        <li>Java</li><li>JFrame</li><li>MySQL</li>
+                    </ul>
+                    <span class="card-link muted">Academic project</span>
+                </article>
+
+                <article class="card card-static reveal">
+                    <span class="card-index">04</span>
+                    <h3>Bank Simulation System</h3>
+                    <p>Object-oriented simulation of core banking operations — accounts, transactions and balances backed by relational persistence.</p>
+                    <ul class="tag-row">
+                        <li>Java</li><li>OOP</li><li>SQL</li>
+                    </ul>
+                    <span class="card-link muted">Academic project</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ LIVE DEMO ============ -->
+        <section id="demo" class="section demo">
+            <span class="section-eyebrow reveal">// live demo</span>
+            <h2 class="reveal">Try It Yourself</h2>
+            <p class="section-lede reveal">
+                Three of my projects are deployed and running live — open them in your
+                browser, no install required.
+            </p>
+
+            <div class="demo-container">
+
+                <article class="demo-card reveal">
+                    <div class="demo-shot">
+                        <div class="browser-bar">
+                            <span class="tbtn red"></span>
+                            <span class="tbtn yellow"></span>
+                            <span class="tbtn green"></span>
+                            <span class="browser-url">cinemamax.app</span>
+                            <span class="browser-live"><span class="pulse-dot"></span>live</span>
+                        </div>
+                        <div class="demo-body">
+                            <h3>CinemaMax</h3>
+                            <p>
+                                A cinema booking web app with movie listings, cinema locations
+                                and seat reservations, plus sign-in, a watchlist, booking
+                                history and an admin panel.
+                            </p>
+                            <ul class="tag-row">
+                                <li>JavaScript</li><li>Chart.js</li><li>Responsive UI</li>
+                            </ul>
+                            <div class="demo-actions">
+                                <a class="btn btn-sm" href="https://chamudithajayasanka.github.io/My-Cinemax-Web-Project/" target="_blank" rel="noopener noreferrer">
+                                    Open demo
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                                </a>
+                                <a class="btn btn-outline btn-sm" href="https://github.com/ChamudithaJayasanka/My-Cinemax-Web-Project" target="_blank" rel="noopener noreferrer">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card reveal">
+                    <div class="demo-shot">
+                        <div class="browser-bar">
+                            <span class="tbtn red"></span>
+                            <span class="tbtn yellow"></span>
+                            <span class="tbtn green"></span>
+                            <span class="browser-url">weatherapp.app</span>
+                            <span class="browser-live"><span class="pulse-dot"></span>live</span>
+                        </div>
+                        <div class="demo-body">
+                            <h3>Weather App</h3>
+                            <p>
+                                Pulls live data from the OpenWeather API for any city, with
+                                hourly and 7-day forecasts, °C/°F switching, saved favourites
+                                and search history.
+                            </p>
+                            <ul class="tag-row">
+                                <li>JavaScript</li><li>OpenWeather API</li><li>LocalStorage</li>
+                            </ul>
+                            <div class="demo-actions">
+                                <a class="btn btn-sm" href="https://chamudithajayasanka.github.io/NewWeatherApp/" target="_blank" rel="noopener noreferrer">
+                                    Open demo
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                                </a>
+                                <a class="btn btn-outline btn-sm" href="https://github.com/ChamudithaJayasanka/NewWeatherApp" target="_blank" rel="noopener noreferrer">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card reveal">
+                    <div class="demo-shot">
+                        <div class="browser-bar">
+                            <span class="tbtn red"></span>
+                            <span class="tbtn yellow"></span>
+                            <span class="tbtn green"></span>
+                            <span class="browser-url">ceylonbank.app</span>
+                            <span class="browser-live"><span class="pulse-dot"></span>live</span>
+                        </div>
+                        <div class="demo-body">
+                            <h3>CeylonBank</h3>
+                            <p>
+                                A digital banking portal with account dashboards, fund
+                                transfers, bill payments, loans and fixed deposits, and live
+                                currency exchange rates.
+                            </p>
+                            <ul class="tag-row">
+                                <li>JavaScript</li><li>CSS</li><li>Charts</li>
+                            </ul>
+                            <div class="demo-actions">
+                                <a class="btn btn-sm" href="https://chamudithajayasanka.github.io/New_Banking_System_Project/" target="_blank" rel="noopener noreferrer">
+                                    Open demo
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                                </a>
+                                <a class="btn btn-outline btn-sm" href="https://github.com/ChamudithaJayasanka/New_Banking_System_Project" target="_blank" rel="noopener noreferrer">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section contact">
+            <span class="section-eyebrow reveal">// contact</span>
+            <h2 class="reveal">Let's build something</h2>
+
+            <div class="contact-grid">
+
+                <div class="contact-info reveal">
+                    <p class="contact-lede">
+                        I'm currently looking for an internship where I can contribute to real
+                        products and keep growing as an engineer. If that sounds like your team,
+                        I'd love to hear from you.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <span class="key">email</span>
+                            <a class="contact-link" href="mailto:chamudithajayasanaka83@gmail.com">chamudithajayasanaka83@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="key">phone</span>
+                            <a class="contact-link" href="tel:+94700000000">+94 7X XXX XXXX</a>
+                        </li>
+                        <li>
+                            <span class="key">linkedin</span>
+                            <a class="contact-link" href="https://www.linkedin.com/in/chamuditha-jayasanka-726872411" target="_blank" rel="noopener noreferrer">chamuditha-jayasanka</a>
+                        </li>
+                        <li>
+                            <span class="key">github</span>
+                            <a class="contact-link" href="https://github.com/ChamudithaJayasanka" target="_blank" rel="noopener noreferrer">ChamudithaJayasanka</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a class="social-btn" href="https://www.linkedin.com/in/chamuditha-jayasanka-726872411" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a class="social-btn" href="https://github.com/ChamudithaJayasanka" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.51-1.11-1.51-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.34 9.34 0 0 1 5.01 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+                        <span class="error" data-error-for="name"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+                        <span class="error" data-error-for="email"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Internship opportunity">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about the role or project…"></textarea>
+                        <span class="error" data-error-for="message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-block" id="submitBtn">Send message</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="year">2026</span> Chamuditha Jayasanka — Built with HTML, CSS &amp; vanilla JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
